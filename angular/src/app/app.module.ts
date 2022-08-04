@@ -13,6 +13,7 @@ import {ButtonModule} from "primeng/button";
 import {ConfirmPopupModule} from "primeng/confirmpopup";
 import {ConfirmationService} from "primeng/api";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CardModule} from "primeng/card";
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
         AppRoutingModule,
         ButtonModule,
         BrowserAnimationsModule,
-        ConfirmPopupModule
+        ConfirmPopupModule,
+        CardModule
     ],
     providers: [
         ProductsService,

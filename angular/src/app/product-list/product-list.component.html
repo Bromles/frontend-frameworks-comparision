@@ -3,20 +3,22 @@
 <p-confirmPopup></p-confirmPopup>
 
 <div *ngFor="let product of products">
-    <h3>
-        <a [routerLink]="['/products', product.id]"
-           [title]="product.name + ' details'">
-            {{ product.name }}
-        </a>
-    </h3>
+    <p-card class="card">
+        <h3>
+            <a [routerLink]="['/products', product.id]"
+               [title]="product.name + ' details'">
+                {{ product.name }}
+            </a>
+        </h3>
 
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
-    </p>
+        <p *ngIf="product.description">
+            Description: {{ product.description }}
+        </p>
 
-    <p-button (click)="share($event)" type="button">
-        Share
-    </p-button>
+        <p-button (click)="share($event)" type="button">
+            Share
+        </p-button>
 
-    <app-product-alerts (notify)="onNotify($event)" [product]="product"></app-product-alerts>
+        <app-product-alerts (notify)="onNotify($event)" [product]="product"></app-product-alerts>
+    </p-card>
 </div>
