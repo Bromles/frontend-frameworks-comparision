@@ -1,24 +1,32 @@
-<h2>Products</h2>
+<div class="content">
+    <h2>Products</h2>
 
-<p-confirmPopup></p-confirmPopup>
+    <p-confirmPopup></p-confirmPopup>
 
-<div *ngFor="let product of products">
-    <p-card class="card">
-        <h3>
-            <a [routerLink]="['/products', product.id]"
-               [title]="product.name + ' details'">
-                {{ product.name }}
-            </a>
-        </h3>
+    <div *ngFor="let product of products" class="card">
+        <p-card>
+            <ng-template pTemplate="header">
+                <h3 class="header">
+                    <a [routerLink]="['/products', product.id]"
+                       [title]="product.name + ' details'">
+                        {{ product.name }}
+                    </a>
+                </h3>
+            </ng-template>
 
-        <p *ngIf="product.description">
-            Description: {{ product.description }}
-        </p>
+            <p *ngIf="product.description">
+                Description: {{ product.description }}
+            </p>
 
-        <p-button (click)="share($event)" type="button">
-            Share
-        </p-button>
+            <ng-template pTemplate="footer">
+                <div class="footer">
+                    <p-button (click)="share($event)" type="button">
+                        Share
+                    </p-button>
 
-        <app-product-alerts (notify)="onNotify($event)" [product]="product"></app-product-alerts>
-    </p-card>
+                    <app-product-alerts (notify)="onNotify($event)" [product]="product"></app-product-alerts>
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
 </div>
