@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Run `npm i -g yarn` to install yarn.
+1. Run `npm i -g yarn` to install yarn (if not installed).
 2. Run `yarn set version berry` to switch project to yarn 3
 3. Run `yarn` to install dependencies.
 
