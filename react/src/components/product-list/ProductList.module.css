@@ -1,0 +1,37 @@
+.card {
+    margin-bottom: 2em;
+}
+
+:global .product-list-content {
+    margin: 0.5rem 1rem;
+}
+
+.header {
+    margin: 0 1.5rem 0 1.5rem
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.shareButton {
+    margin-right: 2rem;
+}
+
+:global .product-list-content .p-card > .p-card-header {
+    padding-top: 1rem;
+}
+
+:global .product-list-content .p-card .p-card-content {
+    padding: 0;
+}
+
+:global .product-list-content .p-card-content > p {
+    margin: 0;
+}
+
+:global  .productListRejectClass {
+    display: none;
+}

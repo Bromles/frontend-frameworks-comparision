@@ -1,0 +1,29 @@
+:global .details-content {
+    margin: 0.5rem 1rem;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+:global .details-content .p-card-header {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+:global .details-content .p-card-body {
+    padding-top: 0.1rem;
+}
+
+:global .details-content .p-card-content {
+    padding: 0;
+}
+
+:global .details-content .p-card-content p {
+    margin: 0;
+}
+
+:global .details-content .p-card-footer {
+    padding: 0;
+}
