@@ -16,7 +16,7 @@ Run `yarn run build` to build the development version.
 
 or
 
-Run `yarn run prod` to build production. 
+Run `yarn run prod` to build for production. 
 
 
 #### The build artifacts will be stored in the `dist` directory.
