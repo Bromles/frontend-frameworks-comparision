@@ -47,7 +47,7 @@ export const ProductList = observer(() => {
                             </h3>}
                         footer={
                             <div className={styles.footer}>
-                                <Button label="Share" type="button" onClick={sharePopupFunc} className={styles.shareButton}/>
+                                <Button type="button" onClick={sharePopupFunc} className={styles.shareButton}>Share</Button>
                                 <ProductAlerts notify={notifyPopupFunc} product={product}/>
                             </div>}
                     >
